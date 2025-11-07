@@ -17,7 +17,7 @@ export default function HomePage() {
     <div className="relative min-h-screen bg-[#f5f7fa] font-sans overflow-hidden">
       <Header />
 
-      {/* ------------------ HERO SECTION ------------------ */}
+
       <section className="relative min-h-[100vh]  flex items-center justify-center overflow-hidden">
         {heroImages.map((src, i) => (
           <img
@@ -77,13 +77,12 @@ export default function HomePage() {
         <div className="absolute bottom-[-60px] left-1/2 -translate-x-1/2 bg-gradient-to-br from-[#f5f7fa] via-[#eef3f8] to-[#dbe3f0] w-[85%] h-24 rounded-t-[3rem] "></div>
       </section>
 
-      {/* ------------------ MISSION + EDUCATION SECTIONS (Unified) ------------------ */}
+
       <section className="relative bg-gradient-to-br from-[#f5f7fa] via-[#eef3f8] to-[#dbe3f0] overflow-hidden">
-        {/* Glow Orbs */}
+       
         <div className="absolute top-0 left-0 w-80 h-80 bg-[#d38a78]/10 blur-3xl rounded-full"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#1e345e]/10 blur-3xl rounded-full"></div>
 
-        {/* ---- MISSION ---- */}
         <div className="relative z-10 py-28 px-6 md:px-16 text-center">
           <div className="max-w-5xl mx-auto space-y-5">
             <p className="text-[#1e345e] uppercase tracking-[0.25em] text-sm font-semibold">
@@ -100,9 +99,9 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* ---- EDUCATION ---- */}
+
         <div className="relative z-10 min-h-[90vh] flex flex-col md:flex-row items-center justify-between overflow-hidden px-6 md:px-16 pb-28">
-          {/* LEFT IMAGE */}
+  
           <div className="relative md:w-1/2 h-[60vh] md:h-[80vh]">
             <img
               src="/hiv-awareness.png"
@@ -113,7 +112,7 @@ export default function HomePage() {
             <div className="absolute -right-20 top-1/2 -translate-y-1/2 w-[350px] h-[350px] border-[30px] border-[#d38a78]/20 rounded-full blur-2xl"></div>
           </div>
 
-          {/* RIGHT CONTENT */}
+  
           <div className="relative md:w-1/2 flex items-center justify-center p-10 md:p-16">
             <div className="absolute top-10 right-16 w-56 h-56 bg-[#d38a78]/30 blur-3xl rounded-full"></div>
             <div className="absolute bottom-0 left-10 w-72 h-72 bg-[#1e345e]/20 blur-3xl rounded-full"></div>
@@ -147,8 +146,6 @@ export default function HomePage() {
         </div>
       </section>
 
-
-      {/* ------------------ COMMUNITY INITIATIVES ------------------ */}
       <section className="relative bg-gradient-to-tr from-[#101c3c] to-[#1a2f61] py-28 px-6 md:px-16 overflow-hidden text-white">
         <div className="absolute top-10 left-10 w-96 h-96 bg-[#d38a78]/20 blur-3xl rounded-full"></div>
 
@@ -192,7 +189,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ------------------ IMPACT SECTION ------------------ */}
       <section className="relative bg-[#f5f7fa] py-28 px-6 md:px-16 overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#d38a78]/10 blur-3xl rounded-full"></div>
 
@@ -235,13 +231,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ------------------ VOICES OF CHANGE ------------------ */}
       <section className="relative bg-[#f5f7fa] py-32 px-6 md:px-20 overflow-hidden">
-        {/* Background accents */}
+
         <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[#d38a78]/20 blur-[180px]"></div>
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#1e345e]/20 blur-[160px]"></div>
 
-        {/* Section Header */}
         <div className="relative z-10 max-w-4xl mx-auto text-center mb-20">
           <h2 className="text-5xl  text-[#1e345e] mb-4">
             Voices of Change
@@ -252,9 +246,9 @@ export default function HomePage() {
           </p>
         </div>
 
-        {/* Adjusted Layout */}
+
         <div className="relative z-10 flex flex-col md:flex-row items-stretch justify-center gap-10 md:gap-6">
-          {/* Card 1 */}
+
           <div className="relative bg-white shadow-xl p-8 rounded-3xl w-full md:w-[320px] z-20 transform md:-rotate-1 hover:rotate-0 hover:scale-[1.03] transition-all duration-500">
             <img
               src="/aisha.jpg"
@@ -267,7 +261,6 @@ export default function HomePage() {
             <p className="text-[#d38a78] font-medium">Grace A.</p>
           </div>
 
-          {/* Card 2 (main card - larger & central) */}
           <div className="relative bg-[#1e345e] text-white shadow-2xl p-10 rounded-3xl w-full md:w-[360px] z-30 transform hover:scale-105 transition-transform duration-500">
             <img
               src="/man1.jpg"
@@ -282,7 +275,7 @@ export default function HomePage() {
             <div className="absolute -top-6 -right-6 w-16 h-16 bg-[#d38a78]/40 rounded-full blur-xl"></div>
           </div>
 
-          {/* Card 3 */}
+
           <div className="relative bg-white shadow-xl p-8 rounded-3xl w-full md:w-[320px] z-20 transform md:rotate-1 hover:rotate-0 hover:scale-[1.03] transition-all duration-500">
             <img
               src="/man2.jpg"
@@ -296,7 +289,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Decorative polygon divider */}
+ 
         <svg
           className="absolute bottom-0 left-0 w-full opacity-10"
           xmlns="http://www.w3.org/2000/svg"
@@ -313,7 +306,7 @@ export default function HomePage() {
 
 
       <section className="relative bg-[#0b122a] text-white py-32 px-6 md:px-20 overflow-hidden">
-        {/* Text Content */}
+
         <div className="relative z-10 max-w-5xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl  mb-6 leading-tight">
             Empowering <span className="text-[#d38a78]">Awareness</span> Through Knowledge

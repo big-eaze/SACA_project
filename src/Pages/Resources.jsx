@@ -106,9 +106,9 @@ export default function ResourcesPage() {
               key={i}
               className={`group relative overflow-hidden p-[2px] rounded-none bg-gradient-to-br ${cat.color} transition-all duration-500 hover:scale-105`}
             >
-              {/* Inner glass layer */}
+  
               <div className="relative bg-[#fdf6f3]/80 backdrop-blur-xl text-left h-full flex flex-col justify-between p-8 transition-all duration-500 group-hover:bg-[#ffffff]/90 group-hover:backdrop-blur-2xl">
-                {/* Accent angled shape */}
+       
                 <div className="absolute top-0 right-0 w-0 h-0 border-l-[60px] border-b-[60px] border-l-transparent border-b-[#d38a78]/20"></div>
 
                 <div className="z-10 relative">
@@ -122,14 +122,13 @@ export default function ResourcesPage() {
                   </p>
                 </div>
 
-                {/* Subtle bottom line hover glow */}
                 <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#d38a78] to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Light gradient background accent */}
+
         <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#fbeae3]/40 via-transparent to-[#e8eef7]/50"></div>
         <div className="absolute top-20 -left-32 w-64 h-64 bg-[#d38a78]/20 blur-3xl rounded-full"></div>
         <div className="absolute bottom-0 -right-32 w-64 h-64 bg-[#1e345e]/10 blur-3xl rounded-full"></div>
@@ -164,7 +163,6 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* CTA */}
       <CTA />
 
       <Footer />

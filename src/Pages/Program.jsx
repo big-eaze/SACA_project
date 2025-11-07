@@ -43,12 +43,12 @@ export default function ProgramsPage() {
 
   return (
     <div className="relative font-sans bg-[#fdf6f3] text-[#1e345e] overflow-hidden">
-      {/* HEADER */}
+
       <div className="relative z-30">
         <Header />
       </div>
 
-      {/* HERO */}
+
       <section className="relative min-h-[80vh] flex items-center justify-center">
         {images.map((src, index) => (
           <img
@@ -73,7 +73,6 @@ export default function ProgramsPage() {
 
       </section>
 
-      {/* PROGRAMS GRID */}
       <section className="relative z-10 py-24 px-8 md:px-16 lg:px-32">
         <h2 className="text-3xl md:text-4xl  text-center mb-16">
           Core Areas of <span className="text-[#d38a78]">Focus</span>
@@ -86,7 +85,7 @@ export default function ProgramsPage() {
               className={`relative bg-gradient-to-br from-[#ffffff] to-[#f9f2ef] rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 ${i % 2 === 0 ? "md:translate-y-8" : "md:-translate-y-8"
                 }`}
             >
-              {/* Image */}
+
               <div className="relative h-64 overflow-hidden">
                 <img
                   src={prog.image}
@@ -96,7 +95,6 @@ export default function ProgramsPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1e345e]/70 to-transparent"></div>
               </div>
 
-              {/* Text */}
               <div className="p-8">
                 <h3 className="text-2xl  text-[#1e345e] mb-3">
                   {prog.title}
@@ -108,7 +106,7 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      {/* PARTNERSHIPS / ADVOCACY HIGHLIGHT */}
+   
       <section className="relative bg-[#1e345e] text-[#fdf6f3] py-24 px-8 md:px-16 lg:px-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1e345e]/90 to-[#bf7563]/40 mix-blend-overlay" />
         <div className="relative z-10 grid md:grid-cols-2 items-center gap-12">
@@ -136,12 +134,12 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      {/* CTA SECTION */}
+
       <section className="relative bg-gradient-to-br from-[#fdf6f3] via-[#f8ece8] to-[#e6eff7] text-[#1e345e] py-20 text-center px-8 overflow-hidden">
-        {/* Decorative Blue Overlay for Depth */}
+
         <div className="absolute inset-0 bg-gradient-to-t from-[#1e345e]/10 via-transparent to-transparent"></div>
 
-        {/* Main Content */}
+
         <div className="relative z-10">
           <h2 className="text-3xl md:text-4xl  mb-4">
             Empower Change Through Our Programs
@@ -155,7 +153,7 @@ export default function ProgramsPage() {
           </button>
         </div>
 
-        {/* Decorative Elements */}
+ 
         <div className="absolute -top-10 -left-10 w-64 h-64 bg-[#bf7563]/10 rounded-full blur-3xl"></div>
         <div className="absolute -bottom-10 -right-10 w-72 h-72 bg-[#1e345e]/10 rounded-full blur-3xl"></div>
       </section>

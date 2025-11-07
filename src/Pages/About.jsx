@@ -18,14 +18,14 @@ export default function AboutPage() {
   return (
     <>
       <div className="font-sans bg-[#fdf6f3] text-[#1e345e] overflow-hidden">
-        {/* Header */}
+
         <div className="relative z-[50]">
           <Header />
         </div>
 
-        {/* HERO SECTION */}
+  
         <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-          {/* Background Image */}
+       
           {images.map((src, index) => (
             <img
               key={index}
@@ -36,10 +36,10 @@ export default function AboutPage() {
             />
           ))}
 
-          {/* Dark Overlay */}
+     
           <div className="absolute inset-0 bg-[#1e345e]/70 z-[1]" />
 
-          {/* Text Content */}
+  
           <div className="relative z-[2] text-center px-6">
             <h1 className="text-4xl md:text-6xl  text-[#fdf6f3] mb-4 drop-shadow-lg">
               About <span className="text-[#d38a78]">H+ AIDs</span>
@@ -54,7 +54,6 @@ export default function AboutPage() {
 
 
 
-        {/* OUR STORY SECTION */}
         <section className="relative z-10 py-24 px-8 md:px-16 lg:px-32">
           <div className="grid md:grid-cols-2 items-center gap-12">
             <div className="relative">
@@ -63,7 +62,7 @@ export default function AboutPage() {
                 alt="Community outreach"
                 className="rounded-lg shadow-lg w-full object-cover"
               />
-              {/* Decorative blob */}
+ 
               <div className="absolute -top-8 -left-8 w-40 h-40 bg-[#d38a78]/20 rounded-full blur-3xl" />
             </div>
             <div>
@@ -80,9 +79,9 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* MISSION & VISION */}
+
         <section className="relative bg-[#1e345e] text-[#fdf6f3] py-24 px-8 md:px-16 lg:px-32 overflow-hidden">
-          {/* Floating Overlay Element */}
+        
           <div className="absolute inset-0 bg-gradient-to-br from-[#1e345e]/80 to-[#bf7563]/40 mix-blend-overlay" />
 
           <div className="relative z-10 grid md:grid-cols-2 gap-10">
@@ -106,7 +105,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* IMPACT SECTION */}
+    
         <section className="py-24 px-8 md:px-16 lg:px-32 text-center bg-[#fdf6f3]">
           <h2 className="text-3xl md:text-4xl  mb-12">
             Our <span className="text-[#d38a78]">Impact</span> in Numbers
@@ -128,7 +127,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* CTA SECTION */}
+
         <section className="relative bg-gradient-to-br from-[#fdf6f3] via-[#f8ece8] to-[#e6eff7] text-[#1e345e] py-20 text-center px-8">
           <h2 className="text-3xl md:text-4xl  mb-4">
             Be Part of the Change

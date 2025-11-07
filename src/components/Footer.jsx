@@ -3,7 +3,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-br from-[#d38a78] to-[#bf7563] text-[#fdf6f3] pt-16">
-      {/* Newsletter Section */}
+
       <div className="max-w-4xl mx-auto text-center px-6">
         <h3 className="text-2xl md:text-3xl  mb-3">
           Stay Informed. Stay Empowered.
@@ -24,12 +24,10 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Divider */}
       <div className="max-w-6xl mx-auto my-16 h-px bg-[#fdf6f3]/30"></div>
 
-      {/* Main Footer */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6 pb-20">
-        {/* Brand & Message */}
+
         <div>
           <h4 className="text-2xl  mb-4 text-[#fffaf7]">
             Niger State agency for the control of Aids
@@ -39,8 +37,6 @@ export default function Footer() {
             through education, compassion, and support.
           </p>
         </div>
-
-        {/* Quick Links */}
         <div>
           <h5 className="font-semibold mb-4 text-[#fffaf7]">Quick Links</h5>
           <ul className="space-y-3 text-[#fbeae3]">
@@ -55,7 +51,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Contact */}
         <div>
           <h5 className="font-semibold mb-4 text-[#fffaf7]">Get in Touch</h5>
           <p className="text-[#fbeae3]">Email: support@ngsaca.org</p>

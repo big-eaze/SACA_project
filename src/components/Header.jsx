@@ -7,19 +7,17 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Scroll effect for background change
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 80);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Prevent body scroll when menu is open
+
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
 
-  // Close menu + scroll to top on route change
   useEffect(() => {
     setMenuOpen(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -41,7 +39,7 @@ export default function Header() {
       className={`fixed top-0 left-0 w-full flex items-center justify-between px-6 md:px-16 py-5 z-50 transition-all duration-300
       ${isTransparent ? "bg-transparent text-white" : "backdrop-blur-md bg-white/80 text-[#1e345e] shadow-sm"}`}
     >
-      {/* Logo */}
+
       <div
         className={`text-2xl font-semibold tracking-wide transition-all ${isTransparent ? "text-white" : "text-[#1e345e]"
           }`}
@@ -56,10 +54,10 @@ export default function Header() {
             key={link.path}
             to={link.path}
             className={`transition hover:text-[#b96b63] ${location.pathname === link.path
-                ? isTransparent
-                  ? "border-b-2 border-white"
-                  : "border-b-2 border-[#1e345e]"
-                : ""
+              ? isTransparent
+                ? "border-b-2 border-white"
+                : "border-b-2 border-[#1e345e]"
+              : ""
               }`}
           >
             {link.name}
@@ -98,8 +96,8 @@ export default function Header() {
             key={link.path}
             to={link.path}
             className={`py-2 text-lg font-medium transition hover:text-[#b96b63] ${location.pathname === link.path
-                ? "text-[#b96b63]"
-                : "text-[#1e345e]"
+              ? "text-[#b96b63]"
+              : "text-[#1e345e]"
               }`}
           >
             {link.name}

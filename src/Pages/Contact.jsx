@@ -17,12 +17,11 @@ export default function ContactPage() {
 
   return (
     <div className="relative font-sans bg-[#fdf6f3] text-[#1e345e] overflow-hidden">
-      {/* HEADER */}
+
       <div className="relative z-30">
         <Header />
       </div>
 
-      {/* HERO WITH SLIDER */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         {images.map((src, index) => (
           <img
@@ -46,14 +45,14 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* REVAMPED CONTACT SECTION */}
+
       <section className="relative py-32 px-6 md:px-16 lg:px-32 bg-gradient-to-br from-[#fdf6f3] via-[#fbeae3] to-[#e8eef7] overflow-hidden">
-        {/* Floating geometric background accents */}
+
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#d38a78]/10 blur-[160px] rounded-full"></div>
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#1e345e]/10 blur-[160px] rounded-full"></div>
 
         <div className="relative z-10 max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-start">
-          {/* LEFT SIDE - Minimalist Contact Info */}
+
           <div className="relative space-y-10">
             <div>
               <h2 className="text-4xl md:text-5xl  mb-4 text-[#1e345e] leading-tight">
@@ -108,9 +107,9 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* RIGHT SIDE - Floating Glass Form */}
+
           <div className="relative bg-white/20 backdrop-blur-3xl border border-white/40 rounded-2xl p-10 shadow-[0_8px_40px_rgba(0,0,0,0.1)]">
-            {/* Decorative holographic streak */}
+ 
             <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/20 to-transparent opacity-40 animate-shimmer"></div>
 
             <h3 className="text-3xl  mb-6 text-[#1e345e]">
