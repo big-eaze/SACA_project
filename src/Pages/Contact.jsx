@@ -81,7 +81,7 @@ export default function ContactPage() {
                   Email
                 </p>
                 <p className="text-lg font-medium">
-                  contact@hopeinitiative.org
+                  contact@ngsaca.org
                 </p>
               </div>
 
@@ -109,7 +109,7 @@ export default function ContactPage() {
 
 
           <div className="relative bg-white/20 backdrop-blur-3xl border border-white/40 rounded-2xl p-10 shadow-[0_8px_40px_rgba(0,0,0,0.1)]">
- 
+
             <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/20 to-transparent opacity-40 animate-shimmer"></div>
 
             <h3 className="text-3xl  mb-6 text-[#1e345e]">
