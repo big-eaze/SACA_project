@@ -29,6 +29,7 @@ export default function Header() {
   const links = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
+    { /*name: "Blog", path: "/blog"*/ },
     { name: "Programs", path: "/programs" },
     { name: "Resources", path: "/resources" },
     { name: "Contact", path: "/contact" },
@@ -49,9 +50,9 @@ export default function Header() {
 
       {/* Desktop Links */}
       <ul className="hidden md:flex gap-8 font-medium">
-        {links.map((link) => (
+        {links.map((link, idx) => (
           <Link
-            key={link.path}
+            key={link.path + idx}
             to={link.path}
             className={`transition hover:text-[#D38A78] ${location.pathname === link.path
               ? isTransparent
@@ -91,9 +92,9 @@ export default function Header() {
         className={`absolute top-full left-0 w-full bg-white/95 backdrop-blur-md flex flex-col items-center py-6 md:hidden shadow-lg overflow-hidden transition-all duration-300 ${menuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
           }`}
       >
-        {links.map((link) => (
+        {links.map((link, idx) => (
           <Link
-            key={link.path}
+            key={link.path + idx}
             to={link.path}
             className={`py-2 text-lg font-medium transition hover:text-[#b96b63] ${location.pathname === link.path
               ? "text-[#b96b63]"
