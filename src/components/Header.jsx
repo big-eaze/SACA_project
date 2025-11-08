@@ -29,7 +29,6 @@ export default function Header() {
   const links = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { /*name: "Blog", path: "/blog"*/ },
     { name: "Programs", path: "/programs" },
     { name: "Resources", path: "/resources" },
     { name: "Contact", path: "/contact" },
