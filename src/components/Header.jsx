@@ -53,7 +53,7 @@ export default function Header() {
           <Link
             key={link.path}
             to={link.path}
-            className={`transition hover:text-[#b96b63] ${location.pathname === link.path
+            className={`transition hover:text-[#D38A78] ${location.pathname === link.path
               ? isTransparent
                 ? "border-b-2 border-white"
                 : "border-b-2 border-[#1e345e]"

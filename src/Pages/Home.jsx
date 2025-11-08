@@ -18,7 +18,8 @@ export default function HomePage() {
       <Header />
 
 
-      <section className="relative min-h-[100vh]  flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[100vh] flex items-center justify-center overflow-hidden">
+        {/* Background Image Slider */}
         {heroImages.map((src, i) => (
           <img
             key={i}
@@ -29,57 +30,59 @@ export default function HomePage() {
           />
         ))}
 
+        {/* Overlay Gradient */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#0b1c44]/90 via-[#132b63]/70 to-transparent" />
         <div className="absolute top-10 left-10 w-64 h-64 bg-[#d38a78]/40 blur-3xl rounded-full opacity-40"></div>
 
-        {/* Futuristic Text Area */}
-        <div className="relative z-20 max-w-4xl px-6 md:px-12 py-12 md:py-16 bg-white/10 backdrop-blur-xl border border-white/20 shadow-[0_8px_60px_rgba(0,0,0,0.3)] rounded-[2rem] overflow-hidden">
+        {/* Hero Content Card */}
+        <div className="relative z-20 w-[90%] sm:w-[85%] md:w-auto max-w-4xl px-6 sm:px-8 md:px-12 py-10 sm:py-12 md:py-16 bg-white/10 backdrop-blur-xl border border-white/20 shadow-[0_8px_60px_rgba(0,0,0,0.3)] rounded-[2rem] overflow-hidden">
 
-          {/* Accent glow edge */}
-          <div className="absolute top-0 left-0 w-[6px] h-full bg-gradient-to-b from-[#d38a78] via-[#e1a493] to-transparent rounded-full"></div>
+          {/* Accent Glow */}
+          <div className="absolute top-0 left-0 w-[4px] sm:w-[6px] h-full bg-gradient-to-b from-[#d38a78] via-[#e1a493] to-transparent rounded-full"></div>
 
-          {/* Top subtle glow shimmer */}
-          <div className="absolute -top-10 right-0 w-64 h-64 bg-[#d38a78]/20 blur-3xl rounded-full opacity-50 animate-pulse"></div>
+          {/* Subtle Shimmer */}
+          <div className="absolute -top-10 right-0 w-48 sm:w-64 h-48 sm:h-64 bg-[#d38a78]/20 blur-3xl rounded-full opacity-50 animate-pulse"></div>
 
-          {/* Inner content */}
-          <div className="relative z-10">
-            <p className="text-xs md:text-sm font-semibold text-[#fdf6f3]/80 tracking-[0.25em] uppercase mb-4">
+          {/* Inner Text Content */}
+          <div className="relative z-10 text-center md:text-left">
+            <p className="text-[10px] sm:text-xs md:text-sm font-semibold text-[#fdf6f3]/80 tracking-[0.25em] uppercase mb-3 sm:mb-4">
               NGSACA
             </p>
 
-            <h1 className="text-4xl md:text-6xl  text-white leading-tight mb-6">
-              <span className="block text-[#d38a78] font-light">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl text-white leading-tight mb-5 sm:mb-6">
+              <span className="block text-[#d38a78] font-light mb-1 sm:mb-2">
                 Empower. Educate. Erase Stigma.
               </span>
               Together, we build healthier futures.
             </h1>
 
-            <p className="text-[#fdf6f3]/80 text-base leading-relaxed mb-8 max-w-lg">
+            <p className="text-[#fdf6f3]/80 text-sm sm:text-base leading-relaxed mb-6 sm:mb-8 max-w-md mx-auto md:mx-0">
               A global mission to spread awareness, provide compassionate education, and
               promote HIV prevention through human connection and medical advancement.
             </p>
 
-            <div className="flex flex-wrap gap-4">
-              <button className="bg-gradient-to-r from-[#d38a78] to-[#bf7563] text-white px-8 py-3 font-medium rounded-full shadow-lg hover:scale-105 transition-transform duration-300">
+            <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-3 sm:gap-4">
+              <button className="bg-gradient-to-r from-[#d38a78] to-[#bf7563] text-white px-6 sm:px-8 py-3 font-medium rounded-full shadow-lg hover:scale-105 transition-transform duration-300">
                 Learn More
               </button>
-              <button className="border border-[#fdf6f3]/40 text-[#fdf6f3] px-8 py-3 rounded-full hover:bg-[#fdf6f3]/10 transition-all">
+              <button className="border border-[#fdf6f3]/40 text-[#fdf6f3] px-6 sm:px-8 py-3 rounded-full hover:bg-[#fdf6f3]/10 transition-all">
                 Get Involved
               </button>
             </div>
           </div>
 
-          {/* Decorative shimmer overlay */}
+          {/* Overlay Shimmer Effect */}
           <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent opacity-40 mix-blend-overlay"></div>
         </div>
 
-
-        <div className="absolute bottom-[-60px] left-1/2 -translate-x-1/2 bg-gradient-to-br from-[#f5f7fa] via-[#eef3f8] to-[#dbe3f0] w-[85%] h-24 rounded-t-[3rem] "></div>
+        {/* Bottom Decorative Curve */}
+        <div className="absolute bottom-[-60px] left-1/2 -translate-x-1/2 bg-gradient-to-br from-[#f5f7fa] via-[#eef3f8] to-[#dbe3f0] w-[95%] sm:w-[85%] h-16 sm:h-24 rounded-t-[2rem] sm:rounded-t-[3rem]" />
       </section>
 
 
+
       <section className="relative bg-gradient-to-br from-[#f5f7fa] via-[#eef3f8] to-[#dbe3f0] overflow-hidden">
-       
+
         <div className="absolute top-0 left-0 w-80 h-80 bg-[#d38a78]/10 blur-3xl rounded-full"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#1e345e]/10 blur-3xl rounded-full"></div>
 
@@ -101,7 +104,7 @@ export default function HomePage() {
 
 
         <div className="relative z-10 min-h-[90vh] flex flex-col md:flex-row items-center justify-between overflow-hidden px-6 md:px-16 pb-28">
-  
+
           <div className="relative md:w-1/2 h-[60vh] md:h-[80vh]">
             <img
               src="/hiv-awareness.png"
@@ -112,7 +115,7 @@ export default function HomePage() {
             <div className="absolute -right-20 top-1/2 -translate-y-1/2 w-[350px] h-[350px] border-[30px] border-[#d38a78]/20 rounded-full blur-2xl"></div>
           </div>
 
-  
+
           <div className="relative md:w-1/2 flex items-center justify-center p-10 md:p-16">
             <div className="absolute top-10 right-16 w-56 h-56 bg-[#d38a78]/30 blur-3xl rounded-full"></div>
             <div className="absolute bottom-0 left-10 w-72 h-72 bg-[#1e345e]/20 blur-3xl rounded-full"></div>
@@ -289,7 +292,7 @@ export default function HomePage() {
           </div>
         </div>
 
- 
+
         <svg
           className="absolute bottom-0 left-0 w-full opacity-10"
           xmlns="http://www.w3.org/2000/svg"
